@@ -1,0 +1,20 @@
+
+{
+    "region" : "ap-south-1",
+    "configuration" : "Debug",
+    "framework"     : "netcoreapp3.1",
+    "self-contained" : false,
+    "application"    : "ToDoApplicationService",
+    "environment"    : "ToDoApplicationService-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-573f8533\";\"aws:ec2:vpc,Subnets\"=\"subnet-e472f79f\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.0.1 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "todoapplicationservice-dev",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}
